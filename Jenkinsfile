@@ -2,13 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Git cloning') {
-            steps {
-                git url: 'https://github.com/moazsys/Angular-HelloWorld.git', branch: 'main'
-            }
-        }
-        stage('Install Dependencies') {
-            steps {
+        stage('Install Dependencies')
+      {
+            steps 
+        {
                 sh 'npm install'
             }
         }
