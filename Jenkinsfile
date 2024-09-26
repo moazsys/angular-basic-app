@@ -23,8 +23,8 @@ pipeline {
                 {
                 
             
-                    def remoteHost = 'moaznaeem@4.161.47.69'
-                    def remoteDir = "/home/moaznaeem/dep"
+                    def remoteHost = 'moazn@4.216.187.218'
+                    def remoteDir = "/home/moazn/dep"
                     sh "scp -r dist/angular-basic-app/* ${remoteHost}:${remoteDir}"
                 }
             }
